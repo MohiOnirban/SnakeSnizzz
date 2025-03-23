@@ -22,7 +22,7 @@ int main() {
 
     for (int i = 0; i < 3; i++)
     {
-        Print(name[i]:);
+        Print(name[i]);
        // printf(":);
         scanf("%d", &subjectResults[i]);
        

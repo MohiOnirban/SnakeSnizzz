@@ -21,9 +21,5 @@ int main () {
             } else if (operator == '/') {
                 printf("Division: %.2f\n", (float) num1/num2);
             } 
-
-
-
     return 0;
-
 }

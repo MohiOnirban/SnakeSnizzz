@@ -23,7 +23,7 @@ int main ()
         }
         else
         {   
-            printf("The number you give %d. \nIt's not divided by 3 or 5. \n", number);
+            printf("The number you give :   %d. \nIt's not divided by 3 or 5. \n", number);
         }
     }
     else 

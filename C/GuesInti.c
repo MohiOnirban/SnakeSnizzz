@@ -4,11 +4,10 @@
 
 int main()
 {
-    int number, guess, attempts=0; //number for random number, guess for user's guess, and attempts for attempts counter.
-
+    int randomNumber, guessNumber, attempts=0; // guessNumber for user's guess, and attempts will count attempts.
 
     srand(time(0)); //seed for random number generation.
-    number = rand() % 100+1; //rand () - generate a random number between 1 and 100.
+    randomNumber = rand() % 100+1; //rand () - generate a random number between 1 and 100.
 
    //printf("\nWelcome to the GuesInti!!\n")
     printf("\n\nGuess a number between 1 and 100. You have 7 attempts.\n");
@@ -18,27 +17,25 @@ int main()
     while (attempts <7)
     {
         printf("\nEnter your guess: ");
-        scanf("%d",&guess);
+        scanf("%d",&guessNumber);
         attempts++;
         
-        if (guess > number)
+        if (guessNumber > randomNumber)
         {
             printf("Too High! Guess lower.\n");
         }
-        else if (guess < number)
+        else if (guessNumber < randomNumber)
         {
             printf("Too low! Guess higher.\n");
         }
         else{
             printf("\nCongratulations!!! You guessed the number in %d attempts.\n\n\n",attempts);
-            break;   // Break because user is correctly guessed. 
-        
+            break;   // Break because user is correctly guessed.    
         }
     }
-    
     if (attempts ==7) //if user run out of attempts
     {
-        printf("\nSorry, you have run out of attempts. \nThe correct number was %d.\n",number);
+        printf("\nSorry, you have run out of attempts. \nThe correct number was %d.\n\n\n",randomNumber);
     }
     
     return 0;
